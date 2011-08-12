@@ -1,3 +1,4 @@
+jQuery Navigation Plugin
 Two possible nav effects so far: 'fade' and 'slide' - added the default setting which has no effect
 going to make a vertical menu as well as the horizontal menu I have already
 Going to make the right side subitems fall to the left of the dropdown
