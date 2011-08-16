@@ -10,5 +10,3 @@ itemHeight    -    Integer - height of each individual nav item
 navEffect     -    String - "slide","fade"; two options at the moment. slide or fade. Default has no effect
 speed         -    Integer - the speed of the tranition effect
 vertical      -    Boolean - default is a horizontal menu with vertical dropdowns. true - the top row is vertical
-
-I think I will make the top level width to be auto, maybe even auto height. And then have a fixed width for all submenus
