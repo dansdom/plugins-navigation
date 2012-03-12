@@ -135,7 +135,7 @@
 		{
 			var nav = this;
 			this.el.children("li.toprow").find("li").bind('mouseover.' + this.namespace, function() {
-				clearTimeout(nav.timer);
+				clearTimeout(nav.el.timer);
 				$(this).addClass("hover");
 				$(this).children("ul").css("display","block");
 				var hoverSublist = $(this).children("ul").children("li"),
