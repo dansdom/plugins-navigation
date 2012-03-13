@@ -1,10 +1,15 @@
 jQuery Navigation Plugin
-Two possible nav effects so far: 'fade' and 'slide' - added the default setting which has no effect
-going to make a vertical menu as well as the horizontal menu I have already
-Going to make the right side subitems fall to the left of the dropdown
-Going to make a fixed width or 'auto' width option for the top level items
 
-Settings
+Two possible nav effects so far: 'fade' and 'slide'.
+I may add support for jQuery UI easing effects. It would be pretty easy, but not sure how good it would look
+
+To do:
+1. Make a vertical menu as well as the horizontal menu I have already.
+2. Make the right side subitems fall to the left of the dropdown. Have the menu intelligently decide what side the submenu should fall on.
+3. Make a fixed width or 'auto' width option for the top level items. This has proved difficult to support on IE.
+
+Settings:
+
 itemWidth     -    Integer - width of each individual nav item
 itemHeight    -    Integer - height of each individual nav item
 navEffect     -    String - "slide","fade"; two options at the moment. slide or fade. Default has no effect
