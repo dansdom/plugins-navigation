@@ -5,7 +5,7 @@ body {min-height:101%;line-height:1;color:black;background:white;font:62.5%/1.4 
 h1,h2,h3,h4,h5,h6 {font-weight:bold}
 :focus {outline:0}
 ol,ul {list-style:none}
-table {border-collapse:separate;border-spacing:0/* tables still need 'cellspacing="0" */}
+table {border-collapse:separate;border-spacing:0/* tables still need cellspacing="0" */}
 caption,th,td {text-align:left; font-weight:normal}
 blockquote:before,blockquote:after,q:before,q:after {content:""}
 blockquote,q {quotes:"" ""}
@@ -16,10 +16,13 @@ img,a img {border:0}
 
 #wrap {width:900px;margin:20px auto;background:#eee;padding:50px 0;overflow:hidden;border:1px solid #ccc;height:750px;-moz-border-radius:10px;-webkit-border-radius:10px;-moz-box-shadow:5px 5px 10px #ccc;-webkit-box-shadow:5px 5px 10px #ccc}
 .content {width:720px;margin:0 auto;overflow:hidden;background:#fff;border:1px solid #ccc;padding-bottom:300px}
-.stack > a {background:url(arrow.png) right 9px no-repeat}
+.stack > a {background:url(arrow.png) right 9px no-repeat;position:relative;}
+.toprow > ul {margin-top:30px;}
 
-li {background:#aaa}
-a {background:transparent;line-height:28px;text-indent:10px;font-size:14px;color:#fff !important;text-decoration:none;font-weight:bold;display:block;height:auto;width:auto;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #999;border-bottom:1px solid #999;height:28px;width:98px;}
+li {background:#aaa;position:relative;float:left;display:block;}
+li li {display:none;}
+li ul {position:absolute;display:block;top:0;width:0;left:0;margin-left:0;height:0;}
+a {background:transparent;line-height:28px;text-indent:10px;font-size:14px;color:#fff !important;text-decoration:none;font-weight:bold;display:block;height:auto;width:auto;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #999;border-bottom:1px solid #999;height:28px;width:auto;}
 a:hover {border-top:1px solid #999;border-left:1px solid #999;border-right:1px solid #ccc;border-bottom:1px solid #ccc;background: #555;}
 
 

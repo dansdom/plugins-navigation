@@ -15,3 +15,11 @@ itemHeight    -    Integer - height of each individual nav item
 navEffect     -    String - "slide","fade"; two options at the moment. slide or fade. Default has no effect
 speed         -    Integer - the speed of the tranition effect
 vertical      -    Boolean - default is a horizontal menu with vertical dropdowns. true - the top row is vertical
+
+2.1 release note:
+
+It's always bothered me that I got very lazy when I made this. I used it in commercial production years ago, but I always customised it. I have now removed most of the CSS that the plugin generates. I feel we are all big boys and girls now, and can look after the CSS ourselves.
+
+I've taken out the negative margins. If you want borders, then set the height on the anchor and style that element. I still haven't done anythine with dynamic width, and probably won't. I probably will never do a vertical toprow layout (couldn't be bothered).
+
+This will probably be my last update on this script, unless someone makes a specific request or I have a project that needs it again, and I want to do more work on it.
