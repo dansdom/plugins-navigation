@@ -19,10 +19,10 @@ img,a img {border:0}
 .stack > a {background:url(arrow.png) right 9px no-repeat;position:relative;}
 .toprow > ul {margin-top:30px;}
 
-li {background:#aaa;position:relative;float:left;display:block;}
-li li {display:none;}
+li {background:#aaa;position:relative;float:left;display:block;white-space:nowrap}
+li li {}
 li ul {position:absolute;display:block;top:0;width:0;left:0;margin-left:0;height:0;}
-a {background:transparent;line-height:28px;text-indent:10px;font-size:14px;color:#fff !important;text-decoration:none;font-weight:bold;display:block;height:auto;width:auto;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #999;border-bottom:1px solid #999;height:28px;width:auto;}
+a {background:transparent;line-height:28px;padding:0 20px;font-size:14px;color:#fff !important;text-decoration:none;font-weight:bold;display:block;height:auto;width:auto;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #999;border-bottom:1px solid #999;height:28px;width:auto;}
 a:hover {border-top:1px solid #999;border-left:1px solid #999;border-right:1px solid #ccc;border-bottom:1px solid #ccc;background: #555;}
 
 

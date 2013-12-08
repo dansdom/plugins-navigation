@@ -23,3 +23,7 @@ It's always bothered me that I got very lazy when I made this. I used it in comm
 I've taken out the negative margins. If you want borders, then set the height on the anchor and style that element. I still haven't done anythine with dynamic width, and probably won't. I probably will never do a vertical toprow layout (couldn't be bothered).
 
 This will probably be my last update on this script, unless someone makes a specific request or I have a project that needs it again, and I want to do more work on it.
+
+2.2 release notes:
+
+I did go back and change the option itemWidth to accept the value 'auto'. The auto width option will only work if the white-space CSS property is set to nowrap as all the li's are floating.

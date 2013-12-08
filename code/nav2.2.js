@@ -47,7 +47,7 @@
 	
 	// these are the plugin default settings that will be over-written by user settings
 	$.NavPlugin.settings = {
-		'itemWidth': 100,
+		'itemWidth': 120,
 		'itemHeight': 30,
 		'navEffect': "slide",
 		'speed': 200,
@@ -88,10 +88,33 @@
 		// add style to the list
 		addCss : function()
 		{
-			  // set width and height for horizontal list
+			var nav = this;
+			// set width and height for horizontal list
 			this.el.css({"display":"inline"});
-			this.el.find("li").css({width: this.opts.itemWidth + "px", height: this.opts.itemHeight + "px"});
-			this.el.toprow.find("ul").find("li").find("ul").css({"left": this.opts.itemWidth + "px"});
+			if (this.opts.itemWidth === 'auto') {
+				// individually set the width of each item in the top row
+				this.el.toprow.each(function() {
+					var itemWidth = $(this).outerWidth();
+					$(this).find("ul").each(function() {
+						// for each child li, find the longest
+						var thisList = $(this),
+							longest = 0;
+						
+						thisList.children("li").each(function() {
+							if ($(this).outerWidth() > longest) {
+								longest = $(this).outerWidth();
+							}
+						});
+						thisList.children("li").css({width: longest + "px", height: nav.opts.itemHeight + "px"});
+						thisList.children("li").children("ul").css({"left": longest + "px"});
+					});
+				});
+			} else {
+				this.el.find("li").css({width: nav.opts.itemWidth + "px", height: nav.opts.itemHeight + "px"});
+				this.el.toprow.find("ul").find("li").find("ul").css({"left": nav.opts.itemWidth + "px"});
+			}
+			// hide the subnav items
+			this.el.stack.find("li").css("display", "none");
 		},
 		// add event handling for the top menu items
 		addTopRowEffect : function()
